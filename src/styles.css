@@ -241,6 +241,7 @@ header {
   border-radius: 20px;
   border: 1px solid var(--border);
   background: var(--white);
+  color: var(--text-dark);
   z-index: 2;
   display: flex;
   align-items: center;
