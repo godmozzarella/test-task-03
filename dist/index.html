@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Уютная кухня</title>
+    <script type="module" crossorigin src="/test-task-03/assets/index-D2s_Stti.js"></script>
+    <link rel="stylesheet" crossorigin href="/test-task-03/assets/index-DVDtl22y.css">
+  </head>
+  <body>
+    <header class="header">
+        <div class="container header__inner">
+          <a href="#"><img src="/test-task-03/assets/logo-uyutnaya-kuhnya.svg-BN_Y_kcE.svg" alt="Уютная кухня"></a>
+
+          <nav class="header__nav">
+            <a href="#menu">Меню</a>
+            <a href="#booking">К бронированию</a>
+          </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+          <img src="/test-task-03/assets/heroImg1-XMFdrow4.svg" alt="" class="hero__image hero__image--desktop" aria-hidden="true">
+          <img src="/test-task-03/assets/heroImg2-BJhFreKn.svg" alt="" class="hero__image hero__image--mobile" aria-hidden="true">
+          <h1>Домашняя кухня в центре города</h1>
+          <p>Бронируйте стол онлайн — мы подготовим всё к вашему приходу.</p>
+          <a href="#booking" class="hero__cta">Забронировать стол</a>
+      </section>
+
+      <section class="text-link">
+          <p>Нравится атмосфера? <a href="#booking" class="text-link__link">перейти к форме бронирования</a></p>
+      </section>
+
+      <section class="gallery">
+          <div class="slider" data-slider>
+            <button class="slider__arrow slider__arrow--prev" data-slider-prev aria-label="Назад">‹</button>
+            <div class="slider__viewport">
+              <ul class="slider__track" data-slider-track></ul>
+            </div>
+            <button class="slider__arrow slider__arrow--next" data-slider-next aria-label="Вперёд">›</button>
+            <ul class="slider__dots" data-slider-dots></ul>
+          </div>
+      </section>
+
+      <section class="faq">
+          <h2>Частые вопросы</h2>
+          <ul class="accordion" data-accordion>
+            <li class="accordion__item">
+              <button class="accordion__head" aria-expanded="false"><p>Часы работы</p><p>+</p></button>
+              <div class="accordion__body" hidden>Пн–Чт 10:00–22:00 · Пт–Сб 10:00–23:00 · Вс 11:00–21:00</div>
+            </li>
+            <li class="accordion__item">
+              <button class="accordion__head" aria-expanded="false"><p>Как добраться</p><p>+</p></button>
+              <div class="accordion__body" hidden>м. Тверская, 5 минут пешком. Вход со двора, домофон 42.</div>
+            </li>
+            <li class="accordion__item">
+              <button class="accordion__head" aria-expanded="false"><p>Детям и особые пожелания</p><p>+</p></button>
+              <div class="accordion__body" hidden>Детское меню и стульчики. Сообщите об аллергиях в форме бронирования.</div>
+            </li>
+          </ul>
+      </section>
+
+      <section class="booking" id="booking">
+          <h2>Бронирование стола</h2>
+          <p>Заполните поля — перезвоним для подтверждения.</p>
+          <form class="booking__form" data-booking novalidate>
+            <label class="field"><span>Имя</span><input name="firstName" required></label>
+            <label class="field"><span>Фамилия</span><input name="lastName" required></label>
+            <label class="field"><span>Email</span><input name="email" type="email" required></label>
+            <label class="field"><span>Телефон</span><input name="phone" type="tel" required></label>
+            <button type="submit" class="booking__submit">Отправить</button>
+          </form>
+      </section>
+    </main>
+
+    <div class="modal" data-modal hidden>
+      <div class="modal__backdrop" data-modal-close></div>
+      <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <h3 id="modal-title">Заявка отправлена</h3>
+        <p>Спасибо! Мы свяжемся с Вами в ближайшее время для подтверждения брони.</p>
+        <button class="modal__close" data-modal-close>Закрыть</button>
+      </div>
+    </div>
+
+  </body>
+</html>
