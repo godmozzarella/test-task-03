@@ -1,14 +1,14 @@
-const SLIDES = [
-  '/src/images/c1.svg',
-  '/src/images/c2.svg',
-  '/src/images/c3.svg',
-  '/src/images/c4.svg',
-  '/src/images/c5.svg',
-  '/src/images/c6.svg',
-  '/src/images/c7.svg',
-  '/src/images/c8.svg',
-  '/src/images/c9.svg',
-];
+import c1 from './images/c1.svg';
+import c2 from './images/c2.svg';
+import c3 from './images/c3.svg';
+import c4 from './images/c4.svg';
+import c5 from './images/c5.svg';
+import c6 from './images/c6.svg';
+import c7 from './images/c7.svg';
+import c8 from './images/c8.svg';
+import c9 from './images/c9.svg';
+
+const SLIDES = [c1, c2, c3, c4, c5, c6, c7, c8, c9];
 
 const TOTAL = SLIDES.length;
 
